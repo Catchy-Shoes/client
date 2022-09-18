@@ -1,4 +1,2 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
-
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+# Welcome to Catchy Shoes 
+This code repository (or "repo") is for the web app of catchy shoes frontend client and the backend services which are integrated through the WSO2 Enterprise Integration
