@@ -15,7 +15,15 @@ p {
 }
 
 .m-5-auto {
-    margin: 5rem auto
+    margin: 5rem auto;
+}
+
+#reset{
+ width:700px;
+}
+
+#reset2{
+ width:500px;
 }
 
 .primary-button {
@@ -157,7 +165,12 @@ form span {
 }
 
 #reset_pass_lbl {
-    float: left
+    float: left;
+    text-align:center;
+}
+
+#reset_pass_lbl2 {
+  border: 2px black;
 }
 
 /***    Home Page     ***/
@@ -165,7 +178,7 @@ form span {
     color: #222
 }
 #text-center{
-    textAlign:"center"
+    text-align:"center"
 }
 .main-para {
     font-size: 2.5rem;
