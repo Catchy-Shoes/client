@@ -22,7 +22,7 @@ const Product = () => {
 
     if (!loading && !product) {
         return (
-            <div className="container">
+            <><div className="container">
                 <div className="product py-2">
                     <div className="details p-3">
                         Product not found. Please visit{" "}
@@ -32,7 +32,9 @@ const Product = () => {
                         to see all available products
                     </div>
                 </div>
-            </div>
+               
+            </div></>
+        
         )
     }
 

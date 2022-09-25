@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <NavBar onSearch={onSearch} cartItemCount={cartItemCount()} />
+      {/* <NavBar onSearch={onSearch} cartItemCount={cartItemCount()} /> */}
       <Routes>
         <Route path="/products" element={<Products />} />
         <Route path="/product/:productId" element={<Product />} />
