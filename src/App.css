@@ -16,7 +16,15 @@ p {
 }
 
 .m-5-auto {
-    margin: 5rem auto
+    margin: 5rem auto;
+}
+
+#reset{
+ width:700px;
+}
+
+#reset2{
+ width:500px;
 }
 
 .primary-button-login {
@@ -175,7 +183,12 @@ form span {
 }
 
 #reset_pass_lbl {
-    float: left
+    float: left;
+    text-align:center;
+}
+
+#reset_pass_lbl2 {
+  border: 2px black;
 }
 
 /***    Home Page     ***/

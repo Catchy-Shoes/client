@@ -5,13 +5,13 @@ import '../../App.css'
 
 const ForgetPasswordPage=()=> {
     return (
-        <div className="text-center m-5-auto">
-            <h2>Reset your password</h2>
+        <div className="text-center m-5-auto" id="reset">
+            <h1>Reset your password</h1>
             <h5>Enter your email address and we will send you a new password</h5>
-            <form action="/login">
+            <form action="/login" id="reset2">
                 <p>
-                    <label id="reset_pass_lbl">Email address</label><br/>
-                    <input type="email" name="email" required />
+                    <label id="reset_pass_lbl" >Email address</label><br/>
+                    <input type="email" name="email" required  id="reset_pass_lbl2" />
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Send password reset email</button>
