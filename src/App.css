@@ -126,8 +126,8 @@ h2 {
 
 form {
     display: inline-block;
-    background: #f3f3f3;
-    border: 1px solid #ddd;
+    /* background: #f3f3f3;
+    border: 1px solid #ddd; */
     border-radius: 2px;
     padding: 2rem;
     margin: 2rem 0 1rem 0

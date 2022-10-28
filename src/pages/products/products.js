@@ -1,12 +1,29 @@
+import { Routes, Route, useNavigate, createSearchParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { FakeStoreApi } from '../../services/fake-store-api'
 import { useSearchParams } from "react-router-dom"
 import { Item } from "../../components/item"
 import { useCart } from "../../context/cart"
 
+import { Cart } from "./../../pages/cart"
+import { Data } from "./../../pages/product/data"
+import { NavBar } from "./../../components/navbar"
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 const axios = require('axios');
 
 const Products = () => {
+
+    const navigate = useNavigate();
+    const { cartItemCount } = useCart()
+  
+    const onSearch = (searchQuery) => {
+      navigate(`/?${createSearchParams({ q: searchQuery })}`)
+    }
+  
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([]);
     const [query] = useSearchParams();
@@ -58,6 +75,7 @@ const Products = () => {
 
     return (
         <>
+            <NavBar onSearch={onSearch} cartItemCount={cartItemCount()} />
             <div className="container">
                 <div className="products my-5">
                     <div className="grid">
@@ -71,6 +89,33 @@ const Products = () => {
                     </div>
                 </div>
             </div>
+
+                    
+		<footer class="footer-distributed">
+        <section></section>
+            <div class="footer-right">
+
+                <a href="#"><FacebookIcon /></a>
+                <a href="#"><TwitterIcon /></a>
+                <a href="#"><LinkedInIcon /></a>
+                {/* <a href="#"><GitHubIcon /></a> */}
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </p>
+
+                <p>Catchy Shoes &copy; 2022</p>
+            </div>
+
+        </footer>
         </>
     )
 }
