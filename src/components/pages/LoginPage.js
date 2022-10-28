@@ -43,7 +43,7 @@ const SignInPage = () =>{
         event.preventDefault();
 
         // 👇️ redirect to /contacts
-        navigate('/prodcuts');
+        navigate('/products');
 
     }
     return (
