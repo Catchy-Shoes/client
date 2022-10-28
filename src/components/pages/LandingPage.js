@@ -19,7 +19,8 @@ const HeaderStyle = {
 
 const LandingPage=()=> {
     return (
-        <header style={ HeaderStyle }>
+        <>
+          <header style={ HeaderStyle }>
             <HeaderC />
             <div className=" LandinContent ">
                 <h1 className="main-title text-left">CATCHY SHOES</h1>
@@ -33,40 +34,36 @@ const LandingPage=()=> {
                     </Link>
                 </div>
             </div>
-           <section></section>
-          
-{/* <section>Footer Example 3</section> */}
-
-		<footer class="footer-distributed">
-
-			<div class="footer-right">
-
-				<a href="#"><FacebookIcon /></a>
-				<a href="#"><TwitterIcon /></a>
-				<a href="#"><LinkedInIcon /></a>
-				<a href="#"><GitHubIcon /></a>
-
-			</div>
-
-			<div class="footer-left">
-
-				<p class="footer-links">
-					<a class="link-1" href="#">Home</a>
-
-					<a href="#">Pricing</a>
-
-					<a href="#">About</a>
-
-					<a href="#">Faq</a>
-
-					<a href="#">Contact</a>
-				</p>
-
-				<p>Catchy Shoes &copy; 2022</p>
-			</div>
-
-		</footer>
+           
         </header>
+        
+		<footer class="footer-distributed">
+        <section></section>
+            <div class="footer-right">
+
+                <a href="#"><FacebookIcon /></a>
+                <a href="#"><TwitterIcon /></a>
+                <a href="#"><LinkedInIcon /></a>
+                {/* <a href="#"><GitHubIcon /></a> */}
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </p>
+
+                <p>Catchy Shoes &copy; 2022</p>
+            </div>
+
+        </footer>
+        </>
+      
 
     )
 }

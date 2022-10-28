@@ -27,15 +27,14 @@ const Data = () => {
   // console.log(quotes)
     return (
         <div className="container">
-            {/*{*/}
-            {/*    quotes.map((index,key)=>{*/}
-            {/*        // console.log(index.price)*/}
-            {/*        return(*/}
-            {/*            <h2>{index.price}</h2>*/}
-            {/*        )*/}
-            {/*    })*/}
-            {/*}*/}
-        </div>
+            {
+                quotes.map((index,key)=>{
+                   // console.log(index.price)*/}
+                    return(
+                        <h2>{index.price}</h2>
+                   )
+               })}
+       </div>
     )
 }
 
