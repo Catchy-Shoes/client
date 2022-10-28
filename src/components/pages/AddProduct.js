@@ -58,7 +58,7 @@ const SignUpPage=()=> {
                 <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                Sign up
+                New Product
                 </Typography>
                 <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
                 <Grid container spacing={2}>
@@ -117,7 +117,7 @@ const SignUpPage=()=> {
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
                 >
-                    Sign Up
+                    Add Product
                 </Button>
                 <Grid container justifyContent="flex-end">
                     <Grid item>
