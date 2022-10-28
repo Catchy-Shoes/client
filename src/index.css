@@ -39,12 +39,20 @@ img {
   background-color: black;
   width: 100%;
   margin: 0 ;
-  padding: 0 ;
+  padding: 0px ;
 }
+
+.container2 {
+  background-color: black;
+  width: 100%;
+  margin-top: 120px ;
+  padding: 50px ;
+}
+
 
 .card {
   height: auto;
-  width: 200px;
+  width: 400px;
   padding: 20px;
   box-shadow: rgb(189, 189, 192) 0px 15px 15px -5px;
   border-radius: 20px;
@@ -83,7 +91,7 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 20px;
   grid-row: wrap;
   justify-content: center;
@@ -91,9 +99,9 @@ img {
   height: 100%;
 }
 
-.grid-3 {
+/* .grid-3 {
   grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 /* Form and its elements */
 
@@ -257,15 +265,26 @@ img {
   font-weight: 700;
 }
 
+
 .header .link {
   display: block;
   height: auto;
-  text-align: left;
+  text-align: center;
+  text-decoration: none;
+  color: orange;
+}
+.header .link:hover {
+ color: white;
 }
 
 .formContainer {
   width: 100%;
   justify-self: end;
+}
+
+.leftCo {
+  text-align: center;
+  text-decoration: none;
 }
 
 .search {
@@ -274,10 +293,14 @@ img {
 }
 
 .search-btn {
-  border: solid 2px #fff;
+  border: solid 3px rgb(255, 255, 255);
   padding: 0 10px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .form-control {
@@ -365,7 +388,7 @@ input[type="text"] {
 } */
 
 .products .grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 50px;
 }
@@ -388,11 +411,12 @@ input[type="text"] {
 
 .card .flex {
   justify-content: space-between;
+  width: 100%;
 }
 
 .image {
-  height: inherit;
-  width: 70%;
+  /* height: inherit; */
+  /* width: 70%; */
   margin: auto;
 }
 
@@ -438,6 +462,7 @@ img {
   width: 50%;
   height: 10%;
   padding: 5px;
+  text-align: center;
   background-size: contain;
   background: transparent;
   color: #fff;

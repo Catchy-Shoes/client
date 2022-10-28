@@ -1,13 +1,14 @@
 .product .grid {
-    width: 700px;
+    width: 100%;
     grid-template-columns: 1fr 2fr;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     gap: 30px;
 }
 
 .product-image {
     width: auto;
     height: auto;
+    text-align: center;
 }
 
 .details {

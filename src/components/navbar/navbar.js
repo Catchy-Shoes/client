@@ -17,9 +17,12 @@ const NavBar = ({ onSearch, cartItemCount }) => {
             <header className="container">
                 <div className="header py-2">
                     <div className="grid">
-                        <Link to="/" className="link">
-                            <h1 className="brand">E-commerce</h1>
-                        </Link>
+                        <div className="leftCon">
+                            <Link to="/" className="link" >
+                                <h2 className="brand">Online Store</h2>
+                            </Link>
+                        </div>
+                        
                         <div className="formContainer">
                             <form className="search">
                                 <div className="form-control">
@@ -31,16 +34,20 @@ const NavBar = ({ onSearch, cartItemCount }) => {
                                     />
                                 </div>
                                 <button type="button" className="search-btn" onClick={handleSubmit} >
-                                    Search
+                                    <box-icon name='search-alt'></box-icon>
                                 </button>
                             </form>
                         </div>
-                        <Link to="/cart" className="link headerCart">
-                            <img className="cartImg" src="/cart.svg" alt="cart" />
-                            {cartItemCount > 0 && (
-                                <div className="cartCounter">{cartItemCount <= 9 ? cartItemCount : "9+"}</div>
-                            )}
-                        </Link>
+                        <div className="leftCon">
+                            <Link to="/cart" className="link">
+                                <img className="cartImg" src="/cart.svg" alt="cart" />
+                                {cartItemCount > 0 && (
+                                    <div className="cartCounter">{cartItemCount <= 9 ? cartItemCount : "9+"}</div>
+                                )}
+                            </Link>
+                            <h4>Shopping Cart</h4>
+                        </div>
+                       
                     </div>
                 </div>
             </header>

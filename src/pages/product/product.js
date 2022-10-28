@@ -3,6 +3,12 @@ import { useEffect, useState } from "react"
 import { FakeStoreApi } from '../../services/fake-store-api'
 import { Link, useParams } from "react-router-dom"
 import { useCart } from "../../context/cart"
+import HeaderC from './../../components/header'
+
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Product = () => {
     const [loading, setLoading] = useState(true);
@@ -22,7 +28,9 @@ const Product = () => {
 
     if (!loading && !product) {
         return (
-            <><div className="container">
+            <>
+             <HeaderC />
+             <div className="container2">
                 <div className="product py-2">
                     <div className="details p-3">
                         Product not found. Please visit{" "}
@@ -33,14 +41,43 @@ const Product = () => {
                     </div>
                 </div>
                
-            </div></>
+            </div>
+                         
+		<footer class="footer-distributed">
+        <section></section>
+            <div class="footer-right">
+
+                <a href="#"><FacebookIcon /></a>
+                <a href="#"><TwitterIcon /></a>
+                <a href="#"><LinkedInIcon /></a>
+                {/* <a href="#"><GitHubIcon /></a> */}
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </p>
+
+                <p>Catchy Shoes &copy; 2022</p>
+            </div>
+
+        </footer>
+            </>
         
         )
     }
 
 
     return (
-        <div className="container">
+        <>
+         <HeaderC />
+        <div className="container2">
             {loading ? (
                 <div className={"loader"}></div>
             ) : (
@@ -65,6 +102,33 @@ const Product = () => {
                 </div>
             )}
         </div>
+                     
+		<footer class="footer-distributed">
+        <section></section>
+            <div class="footer-right">
+
+                <a href="#"><FacebookIcon /></a>
+                <a href="#"><TwitterIcon /></a>
+                <a href="#"><LinkedInIcon /></a>
+                {/* <a href="#"><GitHubIcon /></a> */}
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </p>
+
+                <p>Catchy Shoes &copy; 2022</p>
+            </div>
+
+        </footer>
+        </>
     )
 }
 

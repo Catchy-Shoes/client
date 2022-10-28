@@ -2,6 +2,13 @@ import { Link } from "react-router-dom"
 import { useCart } from "../../context/cart"
 import "./cart.css"
 
+import HeaderC from './../../components/header'
+
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 const SHIPPING_CHARGES = 25
 
 const Cart = () => {
@@ -16,8 +23,12 @@ const Cart = () => {
     }
 
     return (
+       
+       <>
+        <HeaderC />
+      
         <div className="cartWrapper">
-            <div className="container">
+            <div className="container2">
                 {cart.length >= 1 ? (
                     <div className="grid my-5">
                         <div className="cartItem p-3">
@@ -90,6 +101,33 @@ const Cart = () => {
                 )}
             </div>
         </div>
+
+        <footer class="footer-distributed">
+        <section></section>
+            <div class="footer-right">
+
+                <a href="#"><FacebookIcon /></a>
+                <a href="#"><TwitterIcon /></a>
+                <a href="#"><LinkedInIcon /></a>
+                {/* <a href="#"><GitHubIcon /></a> */}
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a class="link-1" href="#">Home</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </p>
+
+                <p>Catchy Shoes &copy; 2022</p>
+            </div>
+
+        </footer>
+        </>
     )
 }
 
