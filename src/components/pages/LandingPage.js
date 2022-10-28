@@ -2,7 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import HeaderC from '../header'
 import '../styles/footer.css'
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import '../../App.css'
 import BackgroundImage from '../../assets/images/bg.png'
 const HeaderStyle = {
@@ -38,10 +41,10 @@ const LandingPage=()=> {
 
 			<div class="footer-right">
 
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
+				<a href="#"><FacebookIcon /></a>
+				<a href="#"><TwitterIcon /></a>
+				<a href="#"><LinkedInIcon /></a>
+				<a href="#"><GitHubIcon /></a>
 
 			</div>
 

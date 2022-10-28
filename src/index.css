@@ -43,11 +43,11 @@ img {
 
 .card {
   height: auto;
-  width: auto;
+  width: 200px;
   padding: 20px;
   box-shadow: rgb(189, 189, 192) 0px 15px 15px -5px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: black;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -408,7 +408,7 @@ img {
 }
 
 .titleLink {
-  color: #4a4a4a;
+  color: #ffff;
   text-decoration: none;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -427,15 +427,15 @@ img {
 }
 
 .price {
-  color: #007fff;
+  color: orange;
   font-weight: 600;
 }
 
 .cart {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 5px;
-  background: #007fff;
+  background: orange;
   color: #fff;
   border: none;
   font-size: 2rem;
@@ -448,11 +448,13 @@ img {
 }
 
 .cartImg {
+  position: relative;
+  bottom: 27px;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
+  -o-transform: scaleX(1);
 }
 
 @media (max-width: 895px) {
