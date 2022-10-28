@@ -36,9 +36,10 @@ img {
 /* Layout */
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 40px;
+  background-color: black;
+  width: 100%;
+  margin: 0 ;
+  padding: 0 ;
 }
 
 .card {
@@ -47,7 +48,7 @@ img {
   padding: 20px;
   box-shadow: rgb(189, 189, 192) 0px 15px 15px -5px;
   border-radius: 20px;
-  background-color: black;
+  background-color: white;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -408,7 +409,8 @@ img {
 }
 
 .titleLink {
-  color: #ffff;
+  color: black;
+  background-color: #0000;
   text-decoration: none;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -429,13 +431,15 @@ img {
 .price {
   color: orange;
   font-weight: 600;
+  font-size: 50px
 }
 
 .cart {
-  width: 30px;
-  height: 30px;
+  width: 50%;
+  height: 10%;
   padding: 5px;
-  background: orange;
+  background-size: contain;
+  background: transparent;
   color: #fff;
   border: none;
   font-size: 2rem;
@@ -450,6 +454,8 @@ img {
 .cartImg {
   position: relative;
   bottom: 27px;
+  height: auto;
+  width: 40px;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
